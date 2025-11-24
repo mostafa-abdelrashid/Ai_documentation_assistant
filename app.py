@@ -25,7 +25,7 @@ st.sidebar.info(
     **Tabs:**
     - 📝 **Analysis**: Purpose, key components, dependencies, and configuration.
     - 🏗️ **Architecture**: Design patterns, components, data flow, and design details.
-    - 📄 **Documentation**: Markdown documentation preview and copyable raw code.
+    - 📄 **Documentation**: Markdown documentation preview , copyable raw code and pdf with the full documentation.
     """
 )
 
@@ -33,12 +33,11 @@ st.sidebar.info(
 st.title("🤖 AI Documentation Assistant")
 st.markdown(
     "Generate code analysis, architecture overview, and markdown documentation automatically.\n\n"
-    "Paste your code or write a prompt below and click **Generate Documentation**."
 )
 
 # --- Centered Prompt Input ---
 prompt = st.text_area(
-    "Enter your code or prompt:",
+    "Paste your code or write a prompt below and click **Generate Documentation**",
     height=250,
     placeholder="Paste your code here or write a prompt to generate documentation..."
 )
